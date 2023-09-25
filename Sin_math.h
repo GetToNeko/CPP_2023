@@ -6,7 +6,7 @@
 #include <math.h>
 using namespace std;
 //Задаем функцию для реализации фактоиала
-unsigned int factorial(unsigned int n)
+int factorial( int n)
 {
 	if (n == 0)
 		return 1;
