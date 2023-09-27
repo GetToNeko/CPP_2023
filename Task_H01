@@ -6,11 +6,13 @@
 #include <math.h>
 using namespace std;
 //Задаем функцию для реализации фактоиала
- int factorial( int n)
-{
-	if (n == 0)
-		return 1;
-	else return n * factorial(n - 1);
+ int factorial(int n) {
+	int k = 1;
+	while (n >= 1) {
+		k = k * n;
+		n = n - 1;
+	}
+	return k;
 }
 
  double sin_func(double x) {
