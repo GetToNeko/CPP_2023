@@ -10,7 +10,7 @@
 #include <math.h>
 using namespace std;
 
-int usain_run(int V, int N, int k, double& sum, double& v, double& l) {
+int usain_run(float V, int N, int k, double& sum, double& v, double& l) {
     double s, t;
     sum = 0;
     v = V * 0.28;
@@ -44,9 +44,11 @@ int usain_run(int V, int N, int k, double& sum, double& v, double& l) {
 }
 int main() {
     int u;
-    int N, V, k;
+    float V;
+    int N, k;
     double sum, v, l;
-    int V1, N1;
+    float V1;
+    int N1;
     setlocale(0, "RU");
     cout << "Добро пожаловать в программу H05!" << endl;
     cout << "Выберете необходимое действие:" << endl;
@@ -138,7 +140,8 @@ int main() {
     float V;
     int N, k;
     double sum, v, l;
-    int V1, N1;
+    float V1;
+    int N1;
     setlocale(0, "RU");
     cout << "Добро пожаловать в программу H05!" << endl;
     cout << "Выберете необходимое действие:" << endl;
